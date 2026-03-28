@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Multimarcas | Vendas</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            color:black;
+
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: azure;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 14px rgba(0,0,0,0.12);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p.descrição{
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .imagem-topo{
+            display: block;
+            width: 180px;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        th,td{
+            border: 1px solid #000000;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+
+        }
+        thead th{
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even){
+            background-color: #e3f2fd;
+        }
+
+        tfoot td{
+            background-color: #dcdcdc;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        .col-marca{
+            width: 30%;
+        }
+        .col-modelo{
+            width: 40%;
+        }
+        .col-ano{
+            width: 30%;
+        }
+        .img-carros{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .img-carros img{
+            width: 70px;
+            height: 45px;
+            border-radius: 4px;
+            object-fit: cover;
+            border: 1px solid #000000;
+        }
+         .imagem-rodape{
+            display: block;
+            margin: 30px auto 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<img class="imagem-topo" src="./img/max multimarcas.jpg" alt="Max Multimarcas">
+        <h1>Modelos de carros em estoque | Vendas</h1>
+        <p class="descrição">
+            Tabela de veículos disponíveis em estoque, multimarcas!
+        </p>
+
+        <table>
+            <caption>Veículos disponíveis em estoque na Max Multimarcas</caption>
+            <thead>
+                <tr>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-modelo">Modelo</th>
+                    <th class="col-ano">Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Início Toyota -->
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/Corolla.jpg" alt="Toyota Corolla">
+                            <span>Toyota</span>
+                        </div>
+                    </td>
+                    <td>Corolla GLi</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/SW4.jpg" alt="Toyota SW4">
+                            <span>Toyota</span>
+                        </div>
+                    </td>
+                    <td>SW4 SRV</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/Hyllux.jpg" alt="Toyota Hilux">
+                            <span>Toyota</span>
+                        </div>
+                    </td>
+                    <td>Hilux SRV</td>
+                    <td>2023</td>
+                </tr>
+                <!--Fim Toyota-->
+
+
+                <!-- InícioHonda -->
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/HRV.jpg" alt="Honda HR-V">
+                            <span>Honda</span>
+                        </div>
+                    </td>
+                    <td>HR-V EXL</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/CIVIC.jpg" alt="Honda Civic">
+                            <span>Honda</span>
+                        </div>
+                    </td>
+                    <td>Civic Touring</td>
+                    <td>2023</td>
+                </tr>
+                <!--Fim Honda-->
+                
+                <!-- Início Mitsubishi -->
+                <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/L200.jpg" alt="Mitsubishi L200">
+                            <span>Mitsubishi</span>
+                        </div>
+                    </td>
+                    <td>L200 Triton</td>
+                    <td>2024</td>
+                </tr>
+                <!--Fim Mitsubishi-->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Estoque atualizado em 27/03/2026.</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <img class ="imagem-rodape" src="./img/max multimarcas.jpg" alt="Max Multimarcas">
+
+    </div>
+</body>
+</html>
